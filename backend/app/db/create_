@@ -1,0 +1,11 @@
+# File: backend/app/db/create_db.py
+from app.db.database import engine, Base
+from app.db.models import Mahasiswa, JobRole, CvData # Impor semua model Anda di sini
+
+def create_tables():
+    # Menghubungkan ke DB dan membuat tabel jika belum ada
+    Base.metadata.create_all(bind=engine)
+    print("PostgreSQL tables created successfully!")
+
+if __name__ == "__main__":
+    create_tables()
