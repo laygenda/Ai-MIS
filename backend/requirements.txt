@@ -5,3 +5,4 @@ sqlalchemy
 psycopg2-binary # Driver PostgreSQL
 python-dotenv # Untuk membaca file .env
 pydantic-settings
+pydantic
