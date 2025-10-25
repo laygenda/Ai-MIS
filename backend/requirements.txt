@@ -6,3 +6,8 @@ psycopg2-binary # Driver PostgreSQL
 python-dotenv # Untuk membaca file .env
 pydantic-settings
 pydantic
+
+# --- Library untuk RAG & CV Processing (BARU DITAMBAHKAN) ---
+PyMuPDF  # Digunakan untuk 'fitz', yaitu ekstraksi teks dari PDF.
+chromadb # Digunakan sebagai Vector Database.
+sentence-transformers # Digunakan untuk model embedding (mengubah teks CV menjadi vektor).

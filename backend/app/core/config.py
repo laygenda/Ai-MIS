@@ -15,6 +15,13 @@ class Settings(BaseSettings):
     DB_NAME: str
     DB_USER: str
     DB_PASSWORD: str
+    # ------------------------------------
+    # KONFIGURASI AI / VECTOR DB BARU
+    # ------------------------------------
+    CHROMA_DB_PATH: str = "./chroma_data" # Direktori penyimpanan data ChromaDB
+    EMBEDDING_MODEL_NAME: str = "all-MiniLM-L6-v2" # Model yang cepat dan efisien
+    # Konfigurasi LLM
+    GEMINI_API_KEY: str
 
     @property
     def DATABASE_URL(self) -> str:
