@@ -6,6 +6,7 @@ from datetime import datetime
 from typing import Optional
 import fitz # PyMuPDF
 from app.services.rag_service import RAGService # <-- IMPORT BARU
+from typing import Optional, List
 
 class CvService:
     def __init__(self, db: Session):
